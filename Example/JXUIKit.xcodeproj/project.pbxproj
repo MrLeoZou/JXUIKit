@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		087EF30FC3F66C081E496E08 /* Pods_JXUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50FA6CA0ECF36ABF21CE5C42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		50FA6CA0ECF36ABF21CE5C42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		567138E505E24C67C667F4EB /* Pods_JXUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* JXUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,9 +63,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A2A283B3E2C08353CF5B8DC /* Pods-JXUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXUIKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JXUIKit_Tests/Pods-JXUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E9204D13D7C534AA449E1DF9 /* JXUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JXUIKit.podspec; path = ../JXUIKit.podspec; sourceTree = "<group>"; };
+		E9204D13D7C534AA449E1DF9 /* JXUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JXUIKit.podspec; path = ../JXUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EBAA3C52286EC35959756BE6 /* Pods-JXUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXUIKit_Example.release.xcconfig"; path = "Target Support Files/Pods-JXUIKit_Example/Pods-JXUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F8406AFB5FE4834B26F3E168 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F8406AFB5FE4834B26F3E168 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F9403BF4F4211775818715B6 /* Pods-JXUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXUIKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-JXUIKit_Example/Pods-JXUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				9A2A283B3E2C08353CF5B8DC /* Pods-JXUIKit_Tests.debug.xcconfig */,
 				690D4CADF2CC6222DC252147 /* Pods-JXUIKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -347,10 +347,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JXUIKit_Example/Pods-JXUIKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JXUIKit/JXUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

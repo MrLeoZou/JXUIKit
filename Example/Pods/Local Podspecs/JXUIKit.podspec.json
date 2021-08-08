@@ -1,0 +1,33 @@
+{
+  "name": "JXUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of JXUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MrLeoZou/JXUIKit.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "MrLeoZou@gmail.com": "roczpzou@tencent.com"
+  },
+  "source": {
+    "git": "https://github.com/MrLeoZou/JXUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "JXUIKit/Classes/**/*",
+  "resource_bundles": {
+    "JXUIKit": [
+      "JXUIKit/Assets/**/*"
+    ]
+  },
+  "public_header_files": "Pod/Classes/JXUIKit.h",
+  "dependencies": {
+    "SDWebImage": [
+      "5.8.3"
+    ]
+  }
+}
