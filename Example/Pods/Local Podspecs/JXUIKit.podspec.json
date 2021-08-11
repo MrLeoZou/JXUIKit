@@ -27,7 +27,7 @@
   "public_header_files": "Pod/Classes/JXUIKit.h",
   "dependencies": {
     "SDWebImage": [
-      "5.8.3"
+
     ]
   }
 }
